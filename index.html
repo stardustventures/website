@@ -81,6 +81,9 @@ body {
   input, label {
     display:block;
 }
+  .hidden {
+    visibility:hidden
+  }
 </style>
 </head>
 <body translate="no">
@@ -97,7 +100,10 @@ body {
 <h1 class="lp__text__title"><span class="lp__text__title-first">Hello</span>
 there!</h1>
 <p class="lp__text__subtext">We're upgrading our look, and will definitely be back. Fill out the form and we will contact you.</p>
-  <form name="contact" netlify>
+  <form name="contact" netlify-honeypot="bot-field" data-netlify="true">
+    <p class="hidden" style="font-size: 1px">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
   <p>
     <label>Name <input type="text" name="name" /></label>
   </p>
