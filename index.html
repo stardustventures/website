@@ -1,136 +1,291 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Stardust Ventures</title>
-<style>
-* {
-  font-family: sans-serif;
-  color: rgba(0,0,0,0.75);
-}
-body {
-  /*background: #fafafa;*/
-  background: rgb(63, 61, 86);
-  height: 100vh;
-  padding: 0px 30px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-  label {
-    font-size:11px;
-  }
-
-.lp {
-  background: #fff;
-  box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.4);
-  border-radius: 8px;
-  max-width: 680px;
-  height: 500px;
-  margin: auto;
-  padding: 32px 32px 8px 32px;
-  overflow: hidden;
-}
-.lp__body {
-  display: flex;
-}
-/*NAV*/
-.lp__nav {
-  width: max-content;
-  display: flex;
-  align-items: center;
-}
-.lp__nav__logo {
-  width: 20px;
-  margin: -1px 0 0;
-  padding: 0 4px 0 0;
-}
-.lp__nav__text {
-  font-weight: 600;
-  font-size: 18px;
-}
-/*MAIN TEXT*/
-.lp__text {
-  min-width: 200px;
-  padding: 0 0 25px;
-  align-self: flex-end;
-}
-.lp__text__title {
-  font-size: 32px;
-  text-decoration: underline;
-  margin: 0;
-}
-.lp__text__title-first {
-  display: block;
-}
-.lp__text__subtext {
-  color: #aaa;
-  font-size: 12px;
-  line-height: 1;
-}
-/*MAIN IMAGE*/
-.lp__mainImg {
-
-}
-.lp__mainImg__img {
-  width: 100%; 
-  height: 310px;
-  margin: -70px 40px 0;
-}
-  input, label {
-    display:block;
-}
-  .hidden {
-    visibility:hidden
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Stardust Ventures | IT consulting - </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
 </head>
+
 <body translate="no">
-<main>
-<div class="lp">
-
-<nav class="lp__nav">
-<p class="lp__nav__text">Stardust Ventures.</p>
-</nav>
-
-<section class="lp__body">
-
-<div class="lp__text">
-<h1 class="lp__text__title"><span class="lp__text__title-first">Hello</span>
-there!</h1>
-<p class="lp__text__subtext">We're upgrading our look, and will definitely be back. Fill out the form and we will contact you.</p>
-  <form name="contact" netlify-honeypot="bot-field" data-netlify="true">
-    <p class="hidden" style="font-size: 1px">
-    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-  </p>
-  <p>
-    <label>Name <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Email <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Phone <input type="text" name="phone" /></label>
-  </p>
-    <p>
-      <label>Message</label> <textarea name="message" /></textarea>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
-</div>
-
-
-<div class="lp__mainImg">
-<img src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/experience_design_eq3j.svg" class="lp__mainImg__img">
-</div>
-
-</section>
-</div>
-</main>
+  <div class="hero">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item subtitle has-text-navy">
+              <span class="has-text-danger has-text-weight-bold">Stardust</span>&nbsp;ventures
+            </a>
+            <!-- <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span> -->
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item has-text-navy has-text-weight-bold" href="#services">
+                Services
+              </a>
+              <a class="navbar-item has-text-navy has-text-weight-bold" href="#contact">
+                Get in touch
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns level">
+          <div class="column">
+            <h1 class="title is-size-1 has-text-navy">We build <span class="has-text-danger">your brand</span> with
+              technology &amp; design, <br> deployed at <span class="has-text-danger"> scale</span> and with <span
+                class="has-text-danger">confidence</span>.</h1>
+          </div>
+          <div class="column">
+            <figure class="image">
+              <img src='./hero.svg' title='stardust hero image' />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <h1 class="is-size-1 has-text-weight-bold has-text-centered has-text-navy">
+            <span class="has-text-danger">We</span> are
+          </h1>
+          <p class="content is-medium has-text-centered has-text-justified">a digital products and services shop, we
+            build products and services that integrate deeply into your brand, on which you can rely upon to transform
+            your organization. We are alwayz excited to push our boundries to a new level to match our clients
+            expectations.
+          </p>
+        </div>
+      </div>
+      <br> <br>
+      <div class="subtitle has-text-centered has-text-navy">We worked with</div>
+      <div class="level">
+        <div class="level-item">
+          <a href='https://vizagzoo.com'>
+            <figure class="image is-96x96">
+              <img src='./igzplogo.png' title='Vizag Zoo' />
+            </figure>
+          </a>
+        </div>
+        <div class="level-item">
+          <a href='#'>
+            <figure class="image is-96x96">
+              <img src='./apfd-Logo.png'
+                title='Vizag Zoo' />
+            </figure>
+          </a>
+        </div>
+        <div class="level-item">
+          <a href='#'>
+            <figure class="image is-96x96">
+              <img src='./egws.jpg' title='EGWS' />
+            </figure>
+          </a>
+        </div>
+        <div class="level-item">
+          <a href='#'>
+            <figure class="image is-96x96">
+              <img src='./ap_logo.png' title='Vizag Zoo' />
+            </figure>
+          </a>
+        </div>
+        <div class="level-item">
+          <a href='#' class="title has-text-black has-text-weight-bold">
+            RideLuxury
+          </a>
+        </div>
+      </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <h1 class="is-size-1 has-text-weight-bold has-text-navy has-text-centered" id="services">Our <span class="has-text-danger">services</span></h1>
+      <p class="content is-medium has-text-centered">We cater to everyone from individuals to businesses. Its Just a
+        glimpse of what we can do, but we always can accomodate more if you ask us.</p>
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./web-mobile.svg" height="120px" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title">
+                Websites &amp; <br /> Mobile Apps
+              </p>
+              <p class="content">
+                Static or dynamic,
+                iOS or Android.
+                We've got you covered.
+                <br>
+                For individuals and small businesses to get online.
+              </p>
+              <ul>
+                <li>Hosting</li>
+                <li>Integrated CMS</li>
+                <li>Content support</li>
+                <li>In built Blog and newsletter system</li>
+                <li>Low cost and zero maintenence</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./cloud-native.svg" height="120px" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title">
+                  Cloud native applications
+                </p>
+                <p class="content">
+                  Want us to tailor to your product on top of AI and leverage the cloud,
+                  and scale to the planet? Look no further.
+                </p>
+                <ul>
+                  <li>Custom built applications</li>
+                  <li>BI Intelligence &amp; Analytics</li>
+                  <li>Bots based tasks and automation</li>
+                  <li>99.99% uptime</li>
+                  <li>Hosted with Kubernetes</li>
+                  <li>Lambda workflows</li>
+                  <li>AWS, Gcloud & Digital Ocean support</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./brand.svg" height="120px" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title">
+                Brand management
+              </p>
+              <p class="content">
+                Looking to expand your audience, and grow your presence?
+              </p>
+              <ul>
+                <li>Graphic design</li>
+                <li>Mail campaigns</li>
+                <li>Organic SEO outreach</li>
+                <li>Online Event hosting with Live Streams</li>
+                <li>Webinars</li>
+                <li>Video Conferencing</li>
+                <li>Social Media management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="container has-text-centered">
+      <div class="title has-text-navy">Is the <span class="has-text-danger">lockdown</span> affecting you?</div>
+      <p>We might just have a plan to help you cross it like a pro with our solutions. We helped our clients get back on
+        top of the track
+        and minimise the effect of lockdown on their organization.
+      </p>
+    </div>
+    <br>
+    <br>
+    <div class="columns level">
+      <div class="column">
+        <h1 class="title has-text-centered has-text-navy" id="contact"><span class="has-text-danger">Like</span> what you see?</h1>
+        <p class="content has-text-centered">Get in touch with us, to get started <br>
+        </p>
+      </div>
+      <div class="column is-8">
+        <div class="notification">
+          <form name="contact" netlify-honeypot="bot-field" data-netlify="true">
+            <p class="is-hidden" style="font-size: 1px">
+              <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+            <div class="field">
+              <div class="control">
+                <input class="input" type="text" placeholder="Full name" name="Full name" required>
+              </div>
+              <br>
+              <div class="field is-horizontal">
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Phone number" name="Phone">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Email" name="Email" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <button class="button is-danger is-small">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <figure class="image is-96x96">
+        <img src="./logo-image-only.png" alt="logo" />
+      </figure>
+      <br> <br>
+      <div class="title has-text-black">" We strongly believe in <b class="has-text-danger">smart work</b> , and always
+        keep it simple and not hard."</div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="columns has-text-centered">
+        <div class="column">
+          <p class="has-text-white">We are based at Vizag IN, the city of destiny. <br>
+            <span class="has-text-danger">Laxmi Towers, Shiva Shakthi nagar Road, Madhurawada.</span>
+          </p>
+        </div>
+        <div class="column">
+          <p class="has-text-white">We are on Whatsapp <br> <span class="has-text-danger">+91 73308 80274</span></p>
+        </div>
+        <div class="column">
+          <p class="has-text-white">We reply to your inbox <br> <span class="has-text-danger">hi "at"
+              stardustventures.org.</span></p>
+        </div>
+      </div>
+    </div>
+    <br> <br> <br>
+    <div class="content has-text-centered">
+      <p class="has-text-white">
+        Built with <b class="has-text-danger">♥</b> at Vizag. <br>
+        Stardust Ventures LLP &copy; 2020
+      </p>
+    </div>
+  </footer>
 </body>
+
 </html>
