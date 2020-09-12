@@ -17,17 +17,17 @@
 <body translate="no">
   <div class="hero">
     <div class="hero-head">
-      <nav class="navbar">
+      <nav class="navbar is-fixed">
         <div class="container">
           <div class="navbar-brand">
             <a class="navbar-item subtitle has-text-navy">
               <span class="has-text-danger has-text-weight-bold">Stardust</span>&nbsp;ventures
             </a>
-            <!-- <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span class="navbar-burger burger has-text-black" data-target="navbarMenuHeroA">
             <span></span>
             <span></span>
             <span></span>
-          </span> -->
+          </span>
           </div>
           <div id="navbarMenuHeroA" class="navbar-menu">
             <div class="navbar-end">
@@ -358,6 +358,65 @@
       </p>
     </div>
   </footer>
+  <script>
+    window.smoothScroll = function(t) {
+      var e = t;
+      do {
+        if (!(e = e.parentNode)) return;
+        e.scrollTop += 1;
+      } while (0 == e.scrollTop);
+      var o = 0;
+      do {
+        if (t == e) break;
+        o += t.offsetTop;
+      } while ((t = t.offsetParent));
+      (scroll = (function(t) {
+        function e(e, o, r, n) {
+          return t.apply(this, arguments);
+        }
+        return (
+          (e.toString = function() {
+            return t.toString();
+          }),
+          e
+        );
+      })(function(t, e, o, r) {
+        ++r > 30 ||
+          ((t.scrollTop = e + ((o - e) / 30) * r),
+          setTimeout(function() {
+            scroll(t, e, o, r);
+          }, 20));
+      })),
+        scroll(e, e.scrollTop, o, 0);
+    };
+  </script>
+   <script>
+    document.addEventListener('DOMContentLoaded', () => {
+   
+     // Get all "navbar-burger" elements
+     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+   
+     // Check if there are any navbar burgers
+     if ($navbarBurgers.length > 0) {
+   
+       // Add a click event on each of them
+       $navbarBurgers.forEach( el => {
+         el.addEventListener('click', () => {
+   
+           // Get the target from the "data-target" attribute
+           const target = el.dataset.target;
+           const $target = document.getElementById(target);
+   
+           // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+           el.classList.toggle('is-active');
+           $target.classList.toggle('is-active');
+   
+         });
+       });
+     }
+   
+   });
+   </script>   
 </body>
 
 </html>
